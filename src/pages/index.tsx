@@ -27,7 +27,7 @@ const ShowcaseCardItems = [
 
 export function Home() {
   const [appLoaded, setAppLoaded] = React.useState<boolean>(false);
-
+  console.log("Home", setAppLoaded);
   return (
     <>
       <Helmet>

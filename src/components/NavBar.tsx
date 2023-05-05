@@ -13,9 +13,9 @@ interface LinkProps {
   divider?: React.ReactNode;
 }
 
-interface NavBarProps {
-  active?: string;
-}
+// interface NavBarProps {
+//   active?: string;
+// }
 
 function NavLink(props: { name: LinkProps["name"]; href: LinkProps["href"] }) {
   return (
@@ -29,7 +29,7 @@ function NavLink(props: { name: LinkProps["name"]; href: LinkProps["href"] }) {
   );
 }
 
-export function NavBar(Props: NavBarProps) {
+export function NavBar() {
   const [isAtTop, setIsAtTop] = useState(true);
   const window = getWindow();
 

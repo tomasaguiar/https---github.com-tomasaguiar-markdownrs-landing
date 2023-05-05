@@ -4,6 +4,7 @@ interface AppEmbedProps {
 }
 
 export function AppEmbed({ appLoaded, setAppLoaded }: AppEmbedProps) {
+  console.log("AppEmbed", setAppLoaded);
   return (
     <div className="static flex items-center justify-center">
       <div className="absolute z-0 bg-[#13152b] rounded-full lg:w-[950px] lg:h-[550px] 2xl:w-[1350px] 2xl:h-[1000px] w-72 h-72 blur-3xl fade-in-heading animation-delay-5" />

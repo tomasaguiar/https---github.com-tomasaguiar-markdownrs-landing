@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import clsx from "clsx";
 import { forwardRef } from "react";
 
@@ -32,21 +33,11 @@ export const FeaturePreview = forwardRef<
   FeaturePreviewBaseProps
 >(
   (
-    {
-      loading,
-      title,
-      description,
-      size,
-      variant,
-      link,
-      customContent,
-      className,
-      ...props
-    },
+    { title, description, size, variant, link, customContent, className },
     ref
   ) => {
     // if size is large then display right side content.
-    let allow_content = size === "lg" ? true : false;
+    const allow_content = size === "lg" ? true : false;
 
     className = clsx(
       variants[variant || "primary"],
@@ -55,12 +46,12 @@ export const FeaturePreview = forwardRef<
       "rounded-xl"
     );
 
-    const FeaturePreviewLink = ({ link }: FeaturePreviewBaseProps) => {
-      return link as JSX.Element;
-    };
+    // const FeaturePreviewLink = ({ link }: FeaturePreviewBaseProps) => {
+    //   return link as JSX.Element;
+    // };
 
     return (
-      <div className={clsx(className, "no-underline")}>
+      <div ref={ref} className={clsx(className, "no-underline")}>
         <div
           className={`w-full my-10 ${
             allow_content === true ? "flex justify-between" : ""

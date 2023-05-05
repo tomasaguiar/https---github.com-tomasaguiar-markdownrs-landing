@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-[#000212];
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+}
+
+.fade-in-heading {
+  animation: fadeInDown 1s forwards;
+  opacity: 0;
+}
+
+.fade-in-app-embed {
+  animation: fadeInUp 3s;
+  -webkit-animation: fadeInUp 3s;
+  -moz-animation: fadeInUp 3s;
+  -o-animation: fadeInUp 3s;
+  -ms-animation: fadeInUp 3s;
+}
+
+.animation-delay-1 {
+  animation-delay: 200ms;
+}
+.animation-delay-2 {
+  animation-delay: 500ms;
+}
+.animation-delay-3 {
+  animation-delay: 700ms;
+}
+.animation-delay-4 {
+  animation-delay: 1000ms;
+}
+.animation-delay-5 {
+  animation-delay: 1200ms;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -23,4 +23,4 @@ An open-source cross-platform markdown editor written in Rust.
   <img src="https://img.shields.io/static/v1?label=Stage&message=Alpha&color=2BB4AB" />
  <p/>
 
-This is the landing repo, and it's temporary, please check [this]("https://github.com/tomasaguiar/markdown-rs") for more information.
+This is the landing repo, and it's temporary, please check [this](https://github.com/tomasaguiar/markdown-rs) for more information.

@@ -13,7 +13,7 @@ export function AppEmbed({ appLoaded, setAppLoaded }: AppEmbedProps) {
       ) : (
         <div className="z-10 w-full h-full lg:w-[80%] lg:h-[80%] fade-in-app-embed animation-delay-1200">
           <img
-            src="../../src/assets/app-showcase.png"
+            src="https://raw.githubusercontent.com/tomasaguiar/markdownrs-landing/main/src/assets/app-showcase.png"
             className="object-cover w-full h-full"
             alt="A Screenshot of markdown-rs app."
           />
